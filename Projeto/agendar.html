@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickBeard | Agendar Horário</title>
+    <link rel="stylesheet" href="./assets/base/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/cards/input.css">
+    <link rel="stylesheet" href="./assets/cards/botao.css">
+    <link rel="stylesheet" href="./assets/geral/caixa.css">
+    <link rel="stylesheet" href="./assets/geral/link.css">
+    <link rel="stylesheet" href="./assets/geral/titulo.css">
+    <link rel="stylesheet" href="./assets/geral/sub-titulo.css">
+    <link rel="stylesheet" href="./assets/agendar/agendar-input.css">
+    <link rel="stylesheet" href="./assets/agendar/agendar-botao.css">
+    <link rel="stylesheet" href="./assets/agendar/agendar-agendados.css">
+</head>
+
+<body class="container">
+    <form class="caixa">
+        <h2 class="titulo">Agende seu Horário</h2>
+        <input type="date" class="input agendar__input" aria-labelledby="Selecionar Data e Hora" data-agendar-dia>
+        <h3 class="sub-titulo">Selecione a Especialidade desejada</h3 class="sub-titulo">
+        <select class="input agendar__input" data-agendar-esp>
+            <option value="" hidden>Selecione</option>
+        </select>
+        <h3 class="sub-titulo">Selecione o Barbeiro desejado</h3 class="sub-titulo">
+        <select class="input agendar__input" data-agendar-barbeiro ></select>
+        <button class="button agendar__botao" data-agendar-hora>Confirmar Agendamento</button>
+        <button class="button agendar__botao--agendados"><a class="link" href="./cliente-agendados.html">Ver Horários Agendados</a></button>
+    </form>
+</body>
+<script src="./js/user/agendarCliente.js"></script>
+</html>

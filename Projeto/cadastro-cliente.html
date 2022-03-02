@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickBeard | Cadastro-Cliente</title>
+    <link rel="stylesheet" href="./assets/base/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/cards/input.css">
+    <link rel="stylesheet" href="./assets/cards/botao.css">
+    <link rel="stylesheet" href="./assets/geral/caixa.css">
+    <link rel="stylesheet" href="./assets/geral/link.css">
+    <link rel="stylesheet" href="./assets/geral/titulo.css">
+    <link rel="stylesheet" href="./assets/cadastro-cliente/cadastro-input.css">
+    <link rel="stylesheet" href="./assets/cadastro-cliente/cadastro-botao.css">
+    <link rel="stylesheet" href="./assets/cadastro-cliente/cadastro-titulo.css">
+    <link rel="stylesheet" href="./assets/cadastro-cliente/cadastro-pergunta.css">
+</head>
+
+<body class="container">
+    <form class="caixa">
+        <h2 class="titulo">Cadastre-se em nosso sistema</h2>
+        <input type="text" class="input cadastro__input" data-nome-cliente placeholder="Nome" aria-labelledby="Nome">
+        <input type="email" class="input cadastro__input" data-email-cliente placeholder="Email" aria-labelledby="Email">
+        <input type="password" class="input cadastro__input" data-senha-cliente placeholder="Senha" aria-labelledby="Senha">
+        <button class="button cadastro__botao">Cadastrar</button>
+        <p class="cadastro__pergunta">Já possui cadastro?
+           <a class="link" href="./login.html">Clique aqui</a> 
+        </p>
+    </form>
+</body>
+<script src="./js/user/cliente.js"></script>
+</html>

@@ -1,0 +1,17 @@
+.caixa{
+    width: 500px;
+    height: auto;
+
+    background-color: var(--cor-caixa);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    padding:0 15px;
+}

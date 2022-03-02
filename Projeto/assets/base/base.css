@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(variaveis.css);
+
+.container{
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-texto);
+
+    background-color: var(--cor-fundo);
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

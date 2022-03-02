@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickBeard | Cadastro-Barbeiro</title>
+    <link rel="stylesheet" href="./assets/base/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/cards/botao.css">
+    <link rel="stylesheet" href="./assets/cards/input.css">
+    <link rel="stylesheet" href="./assets/geral/caixa.css">
+    <link rel="stylesheet" href="./assets/geral/titulo.css">
+    <link rel="stylesheet" href="./assets/geral/link.css">
+    <link rel="stylesheet" href="./assets/barbeiro/input-barbeiro.css">
+    <link rel="stylesheet" href="./assets/barbeiro/botao-barbeiro.css">
+    <link rel="stylesheet" href="./assets/barbeiro/barbeiro-select.css">
+    <link rel="stylesheet" href="./assets/barbeiro/div.css">
+    <link rel="stylesheet" href="./assets/barbeiro/barbeiro-nova-sel.css">
+</head>
+
+<body class="container">
+    <form class="caixa">
+        <h2 class="titulo">Cadastrar Barbeiros</h2>
+        <input type="text" class="input barbeiro__input" placeholder="Nome" aria-labelledby="Nome" data-barbeiro-nome>
+        <input type="number" class="input barbeiro__input" placeholder="Idade" aria-labelledby="Idade"
+            data-barbeiro-idade>
+        <input type="date" class="input barbeiro__input" placeholder="Data de Contratação"
+            aria-labelledby="Data de Contratação">
+        <p>Selecione as Especialidades</p>
+        <div class="barbeiro__div" data-barbeiro-div>
+            <select class="barbeiro__select" data-barbeiro-selecao></select>
+        </div>
+        <ul data-barbeiro-lista></ul>
+        <button class="button barbeiro__botao" data-barbeiro-novaesp>Salvar Especialidade</button>
+        <button class="button barbeiro__botao" data-barbeiro-cadastrar>Cadastrar</button>
+        <button class="button barbeiro__botao"><a class="link" href="./adm-cadastrar-especialidades.html">Criar
+                nova especialidade</a></button>
+        <button class="button barbeiro__botao"><a class="link" href="./adm-agendados.html">Visualizar
+                Agendamentos</a></button>
+    </form>
+</body>
+<script src="./js/barbeiros/cadastrarBarbeiro.js"></script>
+
+</html>

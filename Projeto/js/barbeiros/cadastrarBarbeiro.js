@@ -27,11 +27,17 @@ listaEspecialidades.forEach(element => {
 
 novaEspecialiade.addEventListener('click', (event) => {
     event.preventDefault();
-    const novaSelecao = document.createElement('li');
-    novaSelecao.classList.add('barbeiro__novasel');
-    novaSelecao.innerHTML = selecao.value
-    listaSalva.appendChild(novaSelecao);
-    listaEspecialidadesAtual.push(selecao.value)
+    let verificaRepetido = listaEspecialidadesAtual.findIndex((item) => item == selecao.value)
+    if (verificaRepetido !== -1) {
+        alert('Esse barbeiro já possui essa especialidade')
+    } else{
+        const novaSelecao = document.createElement('li');
+        novaSelecao.classList.add('barbeiro__novasel');
+        novaSelecao.innerHTML = selecao.value
+        listaSalva.appendChild(novaSelecao);
+        listaEspecialidadesAtual.push(selecao.value)
+    }
+
 })
 
 botao.addEventListener('click', (event) => {

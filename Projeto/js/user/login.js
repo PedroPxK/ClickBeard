@@ -20,7 +20,7 @@ botao.addEventListener('click', (event) => {
         const verificaSenha = cliente.senha === senhaAtual;
 
         if (verificaEmail && verificaSenha) {
-            window.location.href = '../ClickBeard/agendar.html'
+            window.location.href = '../Projeto/agendar.html'
             return true
         } else {
             soma += 1;

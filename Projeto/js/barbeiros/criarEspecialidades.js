@@ -26,8 +26,6 @@ listaInicial.forEach(element => {
 botao.addEventListener('click', (event) => {
     event.preventDefault();
     let listaAtual = JSON.parse(localStorage.getItem('listaCompleta'))
-    console.log(listaAtual);
-    console.log(listaCompleta);
     let verificaRepetido = listaAtual.findIndex((item) => item == especialidade.value)
     if (verificaRepetido !== -1) {
         alert('Especialidade já cadastrada')

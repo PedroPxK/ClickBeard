@@ -17,17 +17,14 @@ botao.addEventListener('click', (event) => {
         senha: senhaCliente.value
     }
 
-    let verificaEmail = clientes.some(cliente => cliente['email'] === clienteAtual.email)
-
-    if (verificaEmail) {
-        console.log('Email repetido')
+    let listaAtual = JSON.parse(localStorage.getItem('clientes'))
+    let verificaRepetido = listaAtual.findIndex((item) => item.email == emailCliente.value)
+    if (verificaRepetido !== -1) {
+        alert('Esse email já está sendo utilizado')
     } else {
         clientes.push(clienteAtual)
-        armazedaDados()
+        listaAtual.push(clienteAtual)
+        localStorage.setItem('clientes', JSON.stringify(listaAtual))
         alert('Cadastro Realizado com sucesso')
     }
 })
-
-const armazedaDados = () => {
-    localStorage.setItem('clientes', JSON.stringify(clientes))
-}
